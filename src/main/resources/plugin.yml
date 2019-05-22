@@ -1,0 +1,25 @@
+name: ${project.name}
+version: ${project.version}
+description: ItemMagnet
+authors: [Catalin Ionescu]
+main: ${project.groupId}.${project.artifactId}.ItemMagnet
+api-version: 1.13
+commands:
+  itemmagnet:
+    description: Admin command to configure various ItemMagnet settings
+    usage: /<command> [reload]
+    permission: itemmagnet.use
+    aliases: [coin, magnet]
+permissions:
+  itemmagnet.*:
+    description: All ItemMagnet permissions
+    default: op
+    children:
+    - itemmagnet.admin
+    - itemmagnet.use
+  itemmagnet.admin:
+    description: Allows access to various ItemMagnet settings
+    default: op
+  itemmagnet.use:
+    description: Allows enabling and disabling the magnet for yourself
+    default: true

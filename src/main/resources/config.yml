@@ -1,0 +1,12 @@
+# Enable or disable debugging
+debug: false
+magnet-distance: 10
+
+# Messages sent to players. You can use &0..&f color codes.
+# All messages starting with error-* have the prefix automatically added in front.
+# When rewriting messages that contain text like %d and %s make sure you keep it.
+messages:
+  configuration-loaded: '&6Configuration loaded.'
+  magnet-disabled: '&2Magnet DISABLED. Run this command again to enable it.'
+  magnet-enabled: '&2Magnet ENABLED. Run this command again to disable it.'
+  error-need-player: '&cYou need to be in game for this command.'
